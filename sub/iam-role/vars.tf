@@ -2,16 +2,6 @@ variable "aws_region" {
   type = string
 }
 
-variable "aws_account_id" {
-  description = "The ID of the account trusted to assume the role"
-  type        = string
-}
-
-variable "assume_role_name" {
-  type    = string
-  default = "OrgRole"
-}
-
 variable "role_name" {
   type = string
 }

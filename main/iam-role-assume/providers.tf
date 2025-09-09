@@ -1,14 +1,5 @@
 provider "aws" {
   region = var.aws_region
-
-  default_tags {
-    tags = var.tags
-  }
-}
-
-provider "aws" {
-  region = var.aws_region
-  alias  = "assume_role"
   default_tags {
     tags = var.tags
   }

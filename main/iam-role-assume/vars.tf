@@ -2,6 +2,17 @@ variable "aws_region" {
   type = string
 }
 
+variable "aws_account_id" {
+  description = "The AWS account ID to assume the role in"
+  type        = string
+}
+
+variable "assume_role_name" {
+  description = "The name of the role to assume"
+  type        = string
+  default     = "OrgRole"
+}
+
 variable "role_name" {
   type = string
 }
