@@ -6,6 +6,5 @@ module "iam-role" {
   existing_policies        = var.existing_policies
   enable_github_oidc       = var.enable_github_oidc
   oidc_wildcard_subjects   = var.oidc_wildcard_subjects
-  aws_region               = var.aws_region
   tags                     = var.tags
 }
