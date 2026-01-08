@@ -1,6 +1,6 @@
 module "iam_policy" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
-  version = "6.2.3"
+  version = "6.3.0"
 
   for_each = var.custom_policies
   name     = each.key
@@ -15,7 +15,7 @@ locals {
 # trunk-ignore-all(checkov/CKV_TF_1)
 module "iam_role" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-role"
-  version = "6.2.3"
+  version = "6.3.0"
 
   name                     = var.role_name
   use_name_prefix          = false
